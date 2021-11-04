@@ -1,0 +1,5 @@
+tasks:
+  - init: |
+      echo 'npm install'
+    command: |
+      echo 'npm run dev'
