@@ -9,7 +9,9 @@ https.get("https://coderbyte.com/api/challenges/json/json-cleaning", (resp) => {
     if (resp.statusCode === 200) {
       data = JSON.parse(data);
     }
-    console.log(cleanObj(data));
+    const cleanedData = cleanObj(data);
+
+    console.log(JSON.stringify(cleanedData));
   });
 });
 
